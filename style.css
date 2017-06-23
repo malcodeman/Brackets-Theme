@@ -122,6 +122,13 @@ h1, h2, h3, p{
 
 .footer ul{
 	color: #5f6569;
+	list-style-position: inside;
+	font-family: Roboto;
+}
+
+.footer li{
+	display: list-item;
+	font-size: .8rem;
 }
 
 .footer li a{
@@ -136,12 +143,10 @@ h1, h2, h3, p{
 	text-align: center;
 }
 
-
 .list{
 	padding-left: 0;
 	margin: 0 0;
 }
-
 
 .pd-1{
 	padding: 1rem;
