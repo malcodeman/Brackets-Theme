@@ -1,6 +1,5 @@
 body{
 	margin: 0;
-	background-color: #ccc;
 }
 
 a{
@@ -33,10 +32,7 @@ h1, h2, h3, p{
 .icon{
 	height: 24px;
 	width: 24px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 24px;
-	background-color: transparent;
+	background: center/24px no-repeat transparent;
 	border: 0;
 	cursor: pointer;
 }
