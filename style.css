@@ -37,15 +37,20 @@ h1, h2, h3, p{
 	cursor: pointer;
 }
 
-.cta-btn{
-	font-family: Roboto;
-	font-size: 1.2rem;
-	background-color: #2098f5;
-	border: 0;
-}
-
 .ic-menu{
 	background-image: url(assets/ic_menu_black_48px.svg);
+}
+
+.cta-btn{
+	font: 1.2rem/1.4 Roboto;
+	background-color: #2098f5;
+	border: 0;
+	cursor: pointer;
+	transition: background-color 400ms ease-out;
+}
+
+.cta-btn:hover{
+	background-color: #288EDF;
 }
 
 .hero-wrapper{
@@ -70,24 +75,18 @@ h1, h2, h3, p{
 }
 
 .col p{
-	font-family: Roboto;
-	font-size: .8rem;
-	line-height: 1.6;
+	font: .8rem/1.6 Roboto;
 }
 
-.col .btn{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.btn{
 	border: 1px solid #94d0ff;
 	background-color: transparent;
 	cursor: pointer;
-	font-family: Roboto;
-	font-size: .8rem;
+	font: .8rem/1.2 Roboto;
 	transition: background-color 400ms ease-out;
-	text-align: center;
 }
-.col .btn:hover{
+
+.btn:hover{
 	background-color: #fff;
 }
 
@@ -135,12 +134,12 @@ h1, h2, h3, p{
 	padding: 2rem;
 }
 
-.pl-1{
-	padding-left: 1rem;
-}
-
 .pt-3{
 	padding-top: 3rem;
+}
+
+.pr-1{
+	padding-right: 1rem;
 }
 
 .pb-2{
@@ -151,8 +150,8 @@ h1, h2, h3, p{
 	padding-bottom: 3rem;
 }
 
-.pr-1{
-	padding-right: 1rem;
+.pl-1{
+	padding-left: 1rem;
 }
 
 .mb-1{
