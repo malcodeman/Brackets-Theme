@@ -50,37 +50,12 @@ h1, h2, h3, p{
 
 .hero-wrapper{
 	background-color: #f0f2f3;
-	min-height: 100vh;
+	min-height: calc(100vh - 50px);
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-}
-
-.h1{
-	font-family: Roboto;
-	font-weight: 400;
-	font-size: 2rem;
-}
-
-.h2{
-	font-family: Roboto;
-	font-weight: 400;
-	font-size: 1.2rem;
-}
-
-.h3{
-	font-family: Roboto;
-	font-weight: 400;
-	font-size: 1rem;
-	line-height: 1.6;
-}
-
-.link{
-	font-family: Roboto;
-	font-size: 1rem;
-	line-height: 1.6;
 }
 
 .content-wrapper{
@@ -123,24 +98,28 @@ h1, h2, h3, p{
 .footer ul{
 	color: #5f6569;
 	list-style-position: inside;
-	font-family: Roboto;
-}
-
-.footer li{
-	display: list-item;
-	font-size: .8rem;
-}
-
-.footer li a{
-	color: #98d2ff;
-	font-size: .8rem;
+	font: .8rem/1.6 Roboto;
 }
 
 .about p{
 	color: #a6aab2;
-	font-size: .8rem;
-	font-family: Roboto;
-	text-align: center;
+	font: .8rem/1.2 Roboto;
+}
+
+.h1{
+	font: 400 2rem/1.2 Roboto;
+}
+
+.h2{
+	font: 400 1.2rem/1.4 Roboto;
+}
+
+.h3{
+	font: 400 1rem/1.6 Roboto;
+}
+
+.link{
+	font: 1rem/1 Roboto;
 }
 
 .list{
@@ -202,4 +181,8 @@ h1, h2, h3, p{
 
 .color-blue{
 	color: #2098f5;
+}
+
+.color-light-blue{
+	color: #98d2ff;
 }
