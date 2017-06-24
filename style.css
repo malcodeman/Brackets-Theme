@@ -2,10 +2,6 @@ body{
 	margin: 0;
 }
 
-.hide-overflow{
-	overflow: hidden;
-}
-
 a{
 	text-decoration: none;
 }
@@ -46,6 +42,30 @@ h1, h2, h3, p{
 	justify-content: center;
 }
 
+.hero-wrapper{
+	min-height: 100vh;
+	display: flex;
+}
+
+.hero-content{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #f0f2f3;
+}
+
+.sub-hero-content{
+	display: flex;
+	background-color: #dee9f1;
+	flex-direction: column;
+}
+
+.footer-content{
+	background-color: #13181b;
+}
+
 .icon{
 	height: 24px;
 	width: 24px;
@@ -74,26 +94,6 @@ h1, h2, h3, p{
 	background-color: #288EDF;
 }
 
-.hero-wrapper{
-	min-height: 100vh;
-	display: flex;
-}
-
-.hero-content{
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	background-color: #f0f2f3;
-}
-
-.content-wrapper{
-	display: flex;
-	background-color: #dee9f1;
-	flex-direction: column;
-}
-
 .col{
 	display: flex;
 	flex-direction: column;
@@ -115,11 +115,7 @@ h1, h2, h3, p{
 	background-color: #fff;
 }
 
-.footer{
-	background-color: #13181b;
-}
-
-.footer ul{
+.footer-content ul{
 	color: #5f6569;
 	list-style-position: inside;
 	font: .8rem/1.6 Roboto;
@@ -157,10 +153,6 @@ h1, h2, h3, p{
 
 .pd-2{
 	padding: 2rem;
-}
-
-.pt-3{
-	padding-top: 3rem;
 }
 
 .pr-1{
