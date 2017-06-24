@@ -5,15 +5,25 @@
 <link href="style.css" rel="stylesheet" />
 <main class="main">
 	<header>
-		<nav class="nav pr-1 pl-1">
-			<a class="link color-dark" href="#">Brackets</a>
-			<button class="icon ic-menu"></button>
+		<nav id="nav" class="nav pr-1 pl-1">
+			<div class="nav-wrapper">
+				<a class="link color-dark" href="#">Brackets</a>
+				<button id="menu" class="icon ic-menu"></button>
+			</div>
+			<div id="nav_content" class="nav-content">
+				<a class="link color-dark mb-1" href="#">Contribute</a>
+				<a class="link color-dark mb-1" href="#">API DOcs</a>
+				<a class="link color-dark mb-1" href="#">Blog</a>
+				<a class="link color-dark" href="#">Support</a>
+			</div>
 		</nav>
 	</header>
-	<section class="hero-wrapper pt-3">
-		<h1 class="h1 text-center color-dark mb-1">A modern, open source text editor that understands web design.</h1>
-		<button class="cta-btn color-white mb-1 pd-2">Download Brackets</button>
-		<a class="link other color-blue mb-1" href="#">Other Downloads</a>
+	<section class="hero-wrapper">
+		<div class="hero-content">
+			<h1 class="h1 text-center color-dark mb-1">A modern, open source text editor that understands web design.</h1>
+			<button class="cta-btn color-white mb-1 pd-2">Download Brackets</button>
+			<a class="link other color-blue mb-1" href="#">Other Downloads</a>
+		</div>
 	</section>
 	<section class="content-wrapper pd-2">
 		<div class="col mb-2">
@@ -92,3 +102,4 @@
 		</div>
 	</footer>
 </main>
+<script src="script.js"></script>

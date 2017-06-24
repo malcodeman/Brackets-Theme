@@ -2,6 +2,10 @@ body{
 	margin: 0;
 }
 
+.hide-overflow{
+	overflow: hidden;
+}
+
 a{
 	text-decoration: none;
 }
@@ -11,22 +15,35 @@ h1, h2, h3, p{
 	margin-bottom: 0;
 }
 
-.main{
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
 .nav{
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	min-height: 50px;
+	background-color: rgba(255, 255, 255, .9);
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-full{
+	min-height: 100vh;
+	background-color: #fff;
+}
+
+.nav-wrapper{
+	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 50px;
-	background-color: rgba(255, 255, 255, .9);
+}
+
+.nav-content{
+	display: none;
+	flex-direction: column;
+	background-color: #fff;
+	flex-grow: 1;
+	justify-content: center;
 }
 
 .icon{
@@ -35,6 +52,10 @@ h1, h2, h3, p{
 	background: center/24px no-repeat transparent;
 	border: 0;
 	cursor: pointer;
+}
+
+.ic-close{
+	background-image: url(assets/ic_close_black_48px.svg);
 }
 
 .ic-menu{
@@ -54,12 +75,17 @@ h1, h2, h3, p{
 }
 
 .hero-wrapper{
-	background-color: #f0f2f3;
-	min-height: calc(100vh - 50px);
+	min-height: 100vh;
+	display: flex;
+}
+
+.hero-content{
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+	background-color: #f0f2f3;
 }
 
 .content-wrapper{
@@ -117,7 +143,7 @@ h1, h2, h3, p{
 }
 
 .link{
-	font: 1rem/1 Roboto;
+	font: 1rem/1.2 Roboto;
 }
 
 .list{
@@ -183,4 +209,8 @@ h1, h2, h3, p{
 
 .color-light-blue{
 	color: #98d2ff;
+}
+
+.flex{
+	display: flex;
 }
