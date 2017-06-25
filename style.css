@@ -63,6 +63,7 @@ p {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: center;
+	overflow-y: auto;
 }
 
 .nav-max .link {
@@ -343,6 +344,10 @@ p {
 	display: flex;
 }
 
-.hide-overflow{
-	overflow: hidden;
+.none{
+	display: none;
+}
+
+.static{
+	position: static;
 }
