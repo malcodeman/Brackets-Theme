@@ -4,29 +4,31 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 <link href="style.css" rel="stylesheet" />
 <main>
-	<header>
-		<nav id="nav" class="nav pr-1 pl-1">
-			<div class="nav-wrapper">
-				<a class="link color-dark" href="#">Brackets</a>
-				<button id="menu" class="icon ic-menu"></button>
-			</div>
-			<div id="nav_content" class="nav-content">
-				<a class="link color-dark-6 mb-1" href="#">Contribute</a>
-				<a class="link color-dark-6 mb-1" href="#">API DOcs</a>
-				<a class="link color-dark-6 mb-1" href="#">Blog</a>
-				<a class="link color-dark-6" href="#">Support</a>
-			</div>
-		</nav>
+	<header class="header-wrapper">
+		<div class="header-content container">
+			<nav id="nav" class="nav pr-1 pl-1">
+				<div class="nav-min">
+					<a class="link color-dark" href="#">Brackets</a>
+					<button id="menu" class="icon ic-menu"></button>
+				</div>
+				<div id="nav_content" class="nav-max">
+					<a class="link color-dark-6 mb-1" href="#">Contribute</a>
+					<a class="link color-dark-6 mb-1" href="#">API Docs</a>
+					<a class="link color-dark-6 mb-1" href="#">Blog</a>
+					<a class="link color-dark-6" href="#">Support</a>
+				</div>
+			</nav>
+		</div>
 	</header>
 	<section class="hero-wrapper">
-		<div class="hero-content">
-			<h1 class="h1 text-center color-dark mb-1">A modern, open source text editor that understands web design.</h1>
+		<div class="hero-content container pd-2">
+			<h1 class="h1 text-center color-dark pd-2">A modern, open source text editor that understands web design.</h1>
 			<button class="cta-btn color-white mb-1 pd-2">Download Brackets</button>
 			<a class="link other color-blue mb-1" href="#">Other Downloads</a>
 		</div>
 	</section>
-	<section>
-		<div class="sub-hero-content pd-2">
+	<section class="sub-hero-wrapper">
+		<div class="sub-hero-content container pd-2">
 			<div class="col mb-2">
 				<h2 class="h2 mb-1 color-dark">New in Release</h2>
 				<h3 class="h3 color-dark">Reverse inspect in Live Preview</h3>
@@ -59,8 +61,8 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="footer-content pt-3 pr-2 pb-3 pl-2">
+	<footer class="footer-wrapper">
+		<div class="footer-content container pt-3 pr-2 pb-3 pl-2">
 			<div class="row">
 				<div class="col">
 					<h3 class="h3 mb-1 color-white">Quick Links</h3>
@@ -105,10 +107,12 @@
 			</div>
 		</div>
 	</footer>
-	<div class="about pr-2 pb-3 pl-2">
-		<p class="text-center">Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next level.
-		</p>
-		<p class="text-center">Brackets is released under the MIT License.</p>
-	</div>
+	<section class="about-wrapper">
+		<div class="about-content container pr-2 pb-3 pl-2">
+			<p class="text-center">Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next level.
+			</p>
+			<p class="text-center">Brackets is released under the MIT License.</p>
+		</div>
+	</section>
 </main>
 <script src="script.js"></script>
