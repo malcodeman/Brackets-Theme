@@ -342,3 +342,7 @@ p {
 .flex {
 	display: flex;
 }
+
+.hide-overflow{
+	overflow: hidden;
+}

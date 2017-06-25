@@ -6,11 +6,13 @@ function openMenu() {
         nav_content.classList.add("flex");
         menu.classList.remove("ic-menu");
         menu.classList.add("ic-close");
+        document.body.classList.add("hide-overflow");
     } else {
         nav.classList.remove("nav-full");
         nav_content.classList.remove("flex");
         menu.classList.remove("ic-close");
         menu.classList.add("ic-menu");
+        document.body.classList.remove("hide-overflow");        
     }
 }
 function main() {
