@@ -63,19 +63,13 @@ p {
 	justify-content: space-between;
 }
 
-@media (min-width: 768px) {
-	.nav-min{
-		flex-grow: 0;
-	}
-}
-
 .nav-max {
 	display: none;
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: center;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -99,14 +93,20 @@ p {
 }
 
 .nav-social {
-	margin-left: auto;
 	display: none;
 	align-items: center;
+	flex-grow: 1;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
 	.nav-social {
 		display: flex;
+		margin-left: auto;
+		padding-top: 0;
+		padding-bottom: 0;
+		flex-grow: 0;
 	}
 }
 
