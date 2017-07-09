@@ -1,11 +1,5 @@
-/* Resets */
-
-.none{
+.none {
 	display: none;
-}
-
-.static{
-	position: static;
 }
 
 body {
@@ -24,34 +18,28 @@ p {
 	margin-bottom: 0;
 }
 
+
 /* Header */
 
 .header-wrapper {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
 	background-color: rgba(255, 255, 255, .9);
 }
 
-@media (min-width: 768px) {
-	.header-wrapper {
-		position: fixed;
-	}
-}
-
-.header-content{
+.header-content {
 	box-sizing: border-box;
 }
 
 .nav {
-	min-height: 50px;
 	display: flex;
 	flex-direction: column;
 }
 
 @media (min-width: 768px) {
-	.nav {
+	.nav{
 		flex-direction: row;
 	}
 }
@@ -69,10 +57,16 @@ p {
 }
 
 .nav-min {
-	height: 50px;
 	display: flex;
+	min-height: 50px;
 	align-items: center;
 	justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+	.nav-min{
+		flex-grow: 0;
+	}
 }
 
 .nav-max {
@@ -80,7 +74,6 @@ p {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: center;
-	overflow-y: auto;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
@@ -105,7 +98,7 @@ p {
 	}
 }
 
-.nav-social{
+.nav-social {
 	margin-left: auto;
 	display: none;
 	align-items: center;
@@ -145,13 +138,14 @@ p {
 	}
 }
 
-.ic-github{
-	background-image: url(assets/ic_github.svg);	
+.ic-github {
+	background-image: url(assets/ic_github.svg);
 }
 
-.ic-twitter{
-	background-image: url(assets/ic_twitter.svg);	
+.ic-twitter {
+	background-image: url(assets/ic_twitter.svg);
 }
+
 
 /* Hero */
 
@@ -162,7 +156,6 @@ p {
 }
 
 .hero-wrapper {
-	margin-top: 50px;
 	min-height: calc(100vh - 50px);
 	display: flex;
 	background-color: #f0f2f3;
@@ -311,7 +304,7 @@ p {
 	font: 400 1rem/1.6 Roboto;
 }
 
-.logo{
+.logo {
 	font: 1.2rem/1.2 Roboto;
 }
 
@@ -360,7 +353,7 @@ p {
 	padding-left: 2rem;
 }
 
-.mr-1{
+.mr-1 {
 	margin-right: 1rem;
 }
 

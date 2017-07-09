@@ -6,14 +6,12 @@ function openMenu() {
         nav_content.classList.add("flex");
         menu.classList.remove("ic-menu");
         menu.classList.add("ic-close");
-        header_wrapper.classList.add("static");
         main_content.classList.add("none");
     } else {
         nav.classList.remove("nav-full");
         nav_content.classList.remove("flex");
         menu.classList.remove("ic-close");
         menu.classList.add("ic-menu");
-        header_wrapper.classList.remove("static");
         main_content.classList.remove("none");
     }
 }
