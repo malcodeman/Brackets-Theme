@@ -1,9 +1,16 @@
-.none {
-	display: none;
-}
-
 body {
 	margin: 0;
+	height: 100vh;
+}
+
+.hidden{
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.hidden{
+		overflow: visible;
+	}
 }
 
 a {
@@ -18,15 +25,26 @@ p {
 	margin-bottom: 0;
 }
 
-
-/* Header */
+ /* Header */
 
 .header-wrapper {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	background-color: rgba(255, 255, 255, .9);
+	height: 50px;
+    width: 100%;
+	overflow-y: auto;
+}
+
+.header-wrapper-full{
+	height: 100vh;
+}
+@media (min-width: 768px) {
+	.header-wrapper-full{
+		height: 50px;
+	}
 }
 
 .header-content {
@@ -35,7 +53,7 @@ p {
 
 .nav {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
 }
 
 @media (min-width: 768px) {
@@ -159,6 +177,7 @@ p {
 	min-height: calc(100vh - 50px);
 	display: flex;
 	background-color: #f0f2f3;
+	margin-top: 50px;
 }
 
 .hero-content {

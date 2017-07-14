@@ -9,9 +9,9 @@
 			<nav id="nav" class="nav pr-1 pl-1">
 				<div class="nav-min">
 					<a class="logo color-dark" href="#">Brackets</a>
-					<button id="menu" class="icon ic-menu"></button>
+					<button id="ic_menu" class="icon ic-menu"></button>
 				</div>
-				<div id="nav_content" class="nav-max">
+				<div id="nav_max" class="nav-max">
 					<a class="link color-dark-6 mb-1" href="#">Contribute</a>
 					<a class="link color-dark-6 mb-1" href="#">API Docs</a>
 					<a class="link color-dark-6 mb-1" href="#">Blog</a>
@@ -19,107 +19,104 @@
 				</div>
 				<div id="nav_social" class="nav-social">
 					<a class="icon ic-github mr-1" href="#"></a>
-					<a class="icon ic-twitter" href="#"></a>					
+					<a class="icon ic-twitter" href="#"></a>
 				</div>
 			</nav>
 		</div>
 	</header>
-	<div id="main_content" class="main-content">
-		<section class="hero-wrapper">
-			<div class="hero-content container">
-				<h1 class="h1 text-center color-dark pd-2">A modern, open source text editor that understands web design.</h1>
-				<button class="cta-btn color-white mb-1 pd-2">Download Brackets</button>
-				<a class="link other color-blue mb-1" href="#">Other Downloads</a>
+	<section class="hero-wrapper">
+		<div class="hero-content container">
+			<h1 class="h1 text-center color-dark pd-2">A modern, open source text editor that understands web design.</h1>
+			<button class="cta-btn color-white mb-1 pd-2">Download Brackets</button>
+			<a class="link other color-blue mb-1" href="#">Other Downloads</a>
+		</div>
+	</section>
+	<section class="sub-hero-wrapper">
+		<div class="sub-hero-content container pd-2">
+			<div class="col mb-2">
+				<h2 class="h2 mb-1 color-dark">New in Release</h2>
+				<h3 class="h3 color-dark">Reverse inspect in Live Preview</h3>
+				<p class="color-dark-6 mb-2">Brackets 1.9 ships with reverse inspect in Live Preview. Now clicking on an element in Live Preview highlights the corresponding
+					tag in the source code.</p>
+				<h3 class="h3 color-dark">Support for “Replace All” action in Find & Replace</h3>
+				<p class="color-dark-6 mb-2">Brackets now supports “Replace All” in Find & Replace along with batch operation.</p>
+				<h3 class="h3 color-dark">Download count display and extension sorting based on download count</h3>
+				<p class="color-dark-6 mb-2">Extension Manager now displays download count for listed extensions. Extensions can be sorted based on download count
+					or published date in ‘Available’ and ‘Themes’ tab.</p>
+				<a class="btn color-blue pd-1 text-center" href="#">Read More in the Release Notes</a>
 			</div>
-		</section>
-		<section class="sub-hero-wrapper">
-			<div class="sub-hero-content container pd-2">
-				<div class="col mb-2">
-					<h2 class="h2 mb-1 color-dark">New in Release</h2>
-					<h3 class="h3 color-dark">Reverse inspect in Live Preview</h3>
-					<p class="color-dark-6 mb-2">Brackets 1.9 ships with reverse inspect in Live Preview. Now clicking on an element in Live Preview highlights the corresponding
-						tag in the source code.</p>
-					<h3 class="h3 color-dark">Support for “Replace All” action in Find & Replace</h3>
-					<p class="color-dark-6 mb-2">Brackets now supports “Replace All” in Find & Replace along with batch operation.</p>
-					<h3 class="h3 color-dark">Download count display and extension sorting based on download count</h3>
-					<p class="color-dark-6 mb-2">Extension Manager now displays download count for listed extensions. Extensions can be sorted based on download count
-						or published date in ‘Available’ and ‘Themes’ tab.</p>
-					<a class="btn color-blue pd-1 text-center" href="#">Read More in the Release Notes</a>
-				</div>
-				<div class="col mb-2">
-					<h2 class="h2 mb-1 color-dark">Popular Extensions</h2>
-					<a class="link color-blue" href="#">Emmet</a>
-					<p class="color-dark-6 mb-2">High-speed HTML and CSS workflow.</p>
-					<a class="link color-blue" href="#">Beautify</a>
-					<p class="color-dark-6 mb-2">Format JavaScript, HTML, and CSS files.</p>
-					<a class="btn color-blue pd-1 text-center" href="#">Check Out New Extensions</a>
+			<div class="col mb-2">
+				<h2 class="h2 mb-1 color-dark">Popular Extensions</h2>
+				<a class="link color-blue" href="#">Emmet</a>
+				<p class="color-dark-6 mb-2">High-speed HTML and CSS workflow.</p>
+				<a class="link color-blue" href="#">Beautify</a>
+				<p class="color-dark-6 mb-2">Format JavaScript, HTML, and CSS files.</p>
+				<a class="btn color-blue pd-1 text-center" href="#">Check Out New Extensions</a>
+			</div>
+			<div class="col">
+				<h2 class="h2 mb-1 color-dark">Recent Blog Posts</h2>
+				<a class="link color-blue" href="#">Announcing Brackets 1.9 release</a>
+				<p class="color-dark-6 mb-2">March 23, 2017</p>
+				<a class="link color-blue" href="#">Brackets 2017 Survey : Results</a>
+				<p class="color-dark-6 mb-2">February 21, 2017</p>
+				<a class="link color-blue" href="#">Brackets 2017 Web Tools Survey</a>
+				<p class="color-dark-6 mb-2">January 11, 2017</p>
+				<a class="btn color-blue pd-1 text-center" href="#">Go to Blog</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer-wrapper">
+		<div class="footer-content container pt-3 pr-2 pb-3 pl-2">
+			<div class="row">
+				<div class="col">
+					<h3 class="h3 mb-1 color-white">Quick Links</h3>
+					<ul class="list mb-2">
+						<li><a class="color-light-blue" href="#">Source Code on Github</a></li>
+						<li><a class="color-light-blue" href="#">API Documentation</a></li>
+						<li><a class="color-light-blue" href="#">Weekly Extension Updates</a></li>
+						<li><a class="color-light-blue" href="#">Troubleshooting Help</a></li>
+						<li><a class="color-light-blue" href="#">Wiki</a></li>
+					</ul>
 				</div>
 				<div class="col">
-					<h2 class="h2 mb-1 color-dark">Recent Blog Posts</h2>
-					<a class="link color-blue" href="#">Announcing Brackets 1.9 release</a>
-					<p class="color-dark-6 mb-2">March 23, 2017</p>
-					<a class="link color-blue" href="#">Brackets 2017 Survey : Results</a>
-					<p class="color-dark-6 mb-2">February 21, 2017</p>
-					<a class="link color-blue" href="#">Brackets 2017 Web Tools Survey</a>
-					<p class="color-dark-6 mb-2">January 11, 2017</p>
-					<a class="btn color-blue pd-1 text-center" href="#">Go to Blog</a>
+					<h3 class="h3 mb-1 color-white">Videos</h3>
+					<ul class="list mb-2">
+						<li><a class="color-light-blue" href="#">Introducing Brackets</a></li>
+						<li><a class="color-light-blue" href="#">Live Development for HTML</a></li>
+						<li><a class="color-light-blue" href="#">JavaScript Debugger for Brackets</a></li>
+						<li><a class="color-light-blue" href="#">Tuts+ Introduction to Brackets</a></li>
+						<li><a class="color-light-blue" href="#">Brackets Videos on Youtube</a></li>
+					</ul>
 				</div>
 			</div>
-		</section>
-		<footer class="footer-wrapper">
-			<div class="footer-content container pt-3 pr-2 pb-3 pl-2">
-				<div class="row">
-					<div class="col">
-						<h3 class="h3 mb-1 color-white">Quick Links</h3>
-						<ul class="list mb-2">
-							<li><a class="color-light-blue" href="#">Source Code on Github</a></li>
-							<li><a class="color-light-blue" href="#">API Documentation</a></li>
-							<li><a class="color-light-blue" href="#">Weekly Extension Updates</a></li>
-							<li><a class="color-light-blue" href="#">Troubleshooting Help</a></li>
-							<li><a class="color-light-blue" href="#">Wiki</a></li>
-						</ul>
-					</div>
-					<div class="col">
-						<h3 class="h3 mb-1 color-white">Videos</h3>
-						<ul class="list mb-2">
-							<li><a class="color-light-blue" href="#">Introducing Brackets</a></li>
-							<li><a class="color-light-blue" href="#">Live Development for HTML</a></li>
-							<li><a class="color-light-blue" href="#">JavaScript Debugger for Brackets</a></li>
-							<li><a class="color-light-blue" href="#">Tuts+ Introduction to Brackets</a></li>
-							<li><a class="color-light-blue" href="#">Brackets Videos on Youtube</a></li>
-						</ul>
-					</div>
+			<div class="row">
+				<div class="col">
+					<h3 class="h3 mb-1 color-white">Get Involved</h3>
+					<ul class="list mb-2">
+						<li><a class="color-light-blue" href="#">Suggest a Feature</a></li>
+						<li><a class="color-light-blue" href="#">View Backlog on Trello</a></li>
+						<li><a class="color-light-blue" href="#">Track Our Progress on Waffle</a></li>
+						<li><a class="color-light-blue" href="#">Chat on IRC at Freenode/#Brackets</a></li>
+						<li><a class="color-light-blue" href="#">Checkout Current Issues on GitHub</a></li>
+					</ul>
 				</div>
-				<div class="row">
-					<div class="col">
-						<h3 class="h3 mb-1 color-white">Get Involved</h3>
-						<ul class="list mb-2">
-							<li><a class="color-light-blue" href="#">Suggest a Feature</a></li>
-							<li><a class="color-light-blue" href="#">View Backlog on Trello</a></li>
-							<li><a class="color-light-blue" href="#">Track Our Progress on Waffle</a></li>
-							<li><a class="color-light-blue" href="#">Chat on IRC at Freenode/#Brackets</a></li>
-							<li><a class="color-light-blue" href="#">Checkout Current Issues on GitHub</a></li>
-						</ul>
-					</div>
-					<div class="col">
-						<h3 class="h3 mb-1 color-white">Keep in Touch</h3>
-						<ul class="list mb-2">
-							<li><a class="color-light-blue" href="#">Twitter</a></li>
-							<li><a class="color-light-blue" href="#">Facebook</a></li>
-							<li><a class="color-light-blue" href="#">Google+</a></li>
-						</ul>
-					</div>
+				<div class="col">
+					<h3 class="h3 mb-1 color-white">Keep in Touch</h3>
+					<ul class="list mb-2">
+						<li><a class="color-light-blue" href="#">Twitter</a></li>
+						<li><a class="color-light-blue" href="#">Facebook</a></li>
+						<li><a class="color-light-blue" href="#">Google+</a></li>
+					</ul>
 				</div>
 			</div>
-		</footer>
-		<section class="about-wrapper">
-			<div class="about-content container pr-2 pb-3 pl-2">
-				<p class="text-center">Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next
-					level.
-				</p>
-				<p class="text-center">Brackets is released under the MIT License.</p>
-			</div>
-		</section>
-	</div>
+		</div>
+	</footer>
+	<section class="about-wrapper">
+		<div class="about-content container pr-2 pb-3 pl-2">
+			<p class="text-center">Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next level.
+			</p>
+			<p class="text-center">Brackets is released under the MIT License.</p>
+		</div>
+	</section>
 </main>
 <script src="script.js"></script>
