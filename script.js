@@ -13,10 +13,10 @@ function openMenu() {
         nav_max.classList.add("flex");
         nav_social.classList.add("flex");
         ic_menu.classList.remove("ic-menu");
-        ic_menu.classList.add("ic-close");        
+        ic_menu.classList.add("ic-close");
     } else {
-        document.body.classList.remove("hidden");  
-        header_wrapper.classList.remove("header-wrapper-full");  
+        document.body.classList.remove("hidden");
+        header_wrapper.classList.remove("header-wrapper-full");
         nav.classList.remove("nav-full");
         nav_max.classList.remove("flex");
         nav_social.classList.remove("flex");
