@@ -30,7 +30,7 @@ ul {
 }
 
 
-/* Header */
+/* Header section */
 
 
 /* Position sticky - https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning */
@@ -211,7 +211,7 @@ ul {
 }
 
 
-/* Hero */
+/* Hero section */
 
 .hero-wrapper {
 	background-color: #f0f2f3;
@@ -288,38 +288,60 @@ ul {
 .col {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+
+/* Removes margin bottom from the last column of its parent */
+
+.col:last-child {
+	margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
+	/* flex-grow: 1; flex-shrink: 1; flex-basis: 0%  */
+	/* Sets margin rigth to all columns in sub hero content and removes margin bottom */
 	.col {
 		flex: 1;
+		margin: 0 2rem 0 0;
 	}
-	/* Sets margin rigth to all columns in sub hero content except for the last one */
-	.col {
-		margin-right: 2rem;
-	}
+	/* Removes margin right from the last column */
 	.col:last-child {
 		margin-right: 0;
 	}
 }
 
-.promo-content .col .col-item .h2 {
+
+/* Styling for columns and column-items */
+
+.col .h2,
+.col-item .h2 {
 	color: #505050;
 	color: rgba(0, 0, 0, .9);
+	font: 400 1.2rem/1.4 Roboto;
 }
 
-.promo-content .col .col-item a {
+.col .h3,
+.col-item .h3 {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
+	font: 400 1rem/1.6 Roboto;
+}
+
+.col a,
+.col-item a {
 	color: #2098f5;
 }
 
-.promo-content .col .col-item p {
+.col p,
+.col-item p {
 	color: #737373;
 	color: rgba(0, 0, 0, .6);
 	font: .8rem/1.6 Roboto;
 }
 
 
-/* Features */
+/* Features section */
 
 .features-wrapper {
 	background-color: #fff;
@@ -345,27 +367,8 @@ ul {
 	}
 }
 
-.h3 {
-	font: 400 1rem/1.6 Roboto;
-}
 
-.features-content .col .col-item .h3 {
-	color: #505050;
-	color: rgba(0, 0, 0, .9);
-}
-
-.features-content .col .col-item a {
-	color: #2098f5;
-}
-
-.features-content .col .col-item p {
-	color: #737373;
-	color: rgba(0, 0, 0, .6);
-	font: .8rem/1.6 Roboto;
-}
-
-
-/* Subhero */
+/* Subhero section */
 
 .sub-hero-wrapper {
 	background-color: #dee9f1;
@@ -385,33 +388,8 @@ ul {
 	}
 }
 
-.h2 {
-	font: 400 1.2rem/1.4 Roboto;
-}
-
-.sub-hero-content .col .h2 {
-	margin-bottom: 1rem;
-	color: #505050;
-	color: rgba(0, 0, 0, .9);
-}
-
 .col-item {
 	margin-bottom: 1rem;
-}
-
-.sub-hero-content .col .col-item .h3 {
-	color: #505050;
-	color: rgba(0, 0, 0, .9);
-}
-
-.sub-hero-content .col .col-item a {
-	color: #2098f5;
-}
-
-.sub-hero-content .col .col-item p {
-	color: #737373;
-	color: rgba(0, 0, 0, .6);
-	font: .8rem/1.6 Roboto;
 }
 
 .btn {
@@ -420,7 +398,6 @@ ul {
 	color: #2098f5;
 	cursor: pointer;
 	font: .8rem/1.2 Roboto;
-	margin-bottom: 2rem;
 	padding: 1rem;
 	transition: background-color 400ms ease-out;
 	text-align: center;
@@ -431,20 +408,7 @@ ul {
 }
 
 
-/* Remove margin-bottom from the last button in sub hero content */
-
-.sub-hero-content .col:last-child .btn:last-child {
-	margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-	.btn {
-		margin-bottom: 0;
-	}
-}
-
-
-/* Footer */
+/* Footer section */
 
 .footer-wrapper {
 	background-color: #13181b;
@@ -463,43 +427,6 @@ ul {
 	}
 }
 
-@media (min-width: 768px) {
-	.col-grp {
-		flex-grow: 1;
-	}
-}
-
-@media (min-width: 992px) {
-	.col-grp {
-		display: flex;
-	}
-}
-
-
-/* Removes margin right in footer-content columns */
-
-.footer-content .col {
-	margin: 0 0 1rem 0;
-}
-
-
-/* Removes margin bottom from last column */
-
-@media (min-width: 768px) {
-	.footer-content .col:last-child {
-		margin-bottom: 0;
-	}
-}
-
-
-/* Removes margin bottom from all the columns in footer-content after 992px */
-
-@media (min-width: 992px) {
-	.footer-content .col {
-		margin-bottom: 0;
-	}
-}
-
 .footer-content .col .h3 {
 	color: #fff;
 }
@@ -515,7 +442,7 @@ ul {
 }
 
 
-/* About */
+/* About section */
 
 .about-wrapper {
 	background-color: #13181b;
