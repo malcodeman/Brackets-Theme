@@ -217,7 +217,7 @@ ul {
 	background-color: #f0f2f3;
 	display: flex;
 	min-height: calc(100vh - 50px);
-	background-image: url(assets/bg_brickwall.png);
+	background: url(assets/bg_brickwall.png) fixed;
 }
 
 .hero-content {
