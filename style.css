@@ -117,13 +117,6 @@ ul {
 	padding: 1rem 0 1rem 0;
 }
 
-.nav-max a {
-	color: #737373;
-	color: rgba(0, 0, 0, .6);
-	font: .8rem/1.2 Roboto;
-	margin-bottom: 1rem;
-}
-
 @media (min-width: 768px) {
 	.nav-max {
 		align-items: center;
@@ -132,6 +125,13 @@ ul {
 		flex-grow: 0;
 		padding: 0;
 	}
+}
+
+.nav-max a {
+	color: #737373;
+	color: rgba(0, 0, 0, .6);
+	font: .8rem/1.2 Roboto;
+	margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -228,17 +228,18 @@ ul {
 	justify-content: space-around;
 }
 
-@media (min-width: 768px) {
-	.hero-content .h1 {
-		width: 50%;
-	}
-}
-
 .h1 {
 	color: #505050;
 	color: rgba(0, 0, 0, .9);
 	font: 400 2rem/1.2 Roboto;
 	text-align: center;
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+	.hero-content .h1 {
+		width: 50%;
+	}
 }
 
 .btn-cta {
@@ -249,6 +250,7 @@ ul {
 	font: 1.2rem/1.4 Roboto;
 	padding: 2rem;
 	transition: background-color 400ms ease-out;
+	margin-bottom: 2rem;
 }
 
 .btn-cta:hover {
@@ -258,24 +260,25 @@ ul {
 .hero-content a {
 	color: #2098f5;
 	font: 1rem/1.2 Roboto;
+	margin-bottom: 2rem;
 }
 
 
-/* Subhero */
+/* Features */
 
-.sub-hero-wrapper {
-	background-color: #dee9f1;
-	padding: 2rem 0 2rem 0;
+.features-wrapper {
+	background-color: #fff;
+	padding: 4rem 0 4rem 0;
 }
 
-.sub-hero-content {
+.features-content {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 }
 
 @media (min-width: 768px) {
-	.sub-hero-content {
+	.features-content {
 		flex-direction: row;
 		justify-content: space-between;
 	}
@@ -291,11 +294,55 @@ ul {
 		flex: 1;
 	}
 	/* Sets margin rigth to all columns in sub hero content except for the last one */
-	.sub-hero-content .col {
+	.col {
 		margin-right: 1rem;
 	}
-	.sub-hero-content .col:last-child {
+	.col:last-child {
 		margin-right: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.features-content .col-item {
+		margin-bottom: 0;
+	}
+}
+
+.h3 {
+	font: 400 1rem/1.6 Roboto;
+}
+
+.features-content .col .col-item .h3 {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
+}
+
+.features-content .col .col-item a {
+	color: #2098f5;
+}
+
+.features-content .col .col-item p {
+	font: .8rem/1.6 Roboto;
+}
+
+
+/* Subhero */
+
+.sub-hero-wrapper {
+	background-color: #dee9f1;
+	padding: 4rem 0 4rem 0;
+}
+
+.sub-hero-content {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 768px) {
+	.sub-hero-content {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
 
@@ -311,10 +358,6 @@ ul {
 
 .col-item {
 	margin-bottom: 1rem;
-}
-
-.h3 {
-	font: 400 1rem/1.6 Roboto;
 }
 
 .sub-hero-content .col .col-item .h3 {
@@ -346,12 +389,6 @@ ul {
 	background-color: #fff;
 }
 
-@media (min-width: 768px) {
-	.btn {
-		margin-bottom: 0;
-	}
-}
-
 
 /* Remove margin-bottom from the last button in sub hero content */
 
@@ -359,12 +396,18 @@ ul {
 	margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+	.btn {
+		margin-bottom: 0;
+	}
+}
+
 
 /* Footer */
 
 .footer-wrapper {
 	background-color: #13181b;
-	padding: 2rem 0 2rem 0;
+	padding: 4rem 0 4rem 0;
 }
 
 .footer-content {
@@ -404,6 +447,9 @@ ul {
 	}
 }
 
+
+/* Removes margin bottom from all the columns in footer-content after 992px */
+
 @media (min-width: 992px) {
 	.footer-content .col {
 		margin-bottom: 0;
@@ -429,7 +475,7 @@ ul {
 
 .about-wrapper {
 	background-color: #13181b;
-	padding: 2rem 0 2rem 0;
+	padding: 4rem 0 4rem 0;
 }
 
 .about-content {
