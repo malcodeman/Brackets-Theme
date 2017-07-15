@@ -217,6 +217,7 @@ ul {
 	background-color: #f0f2f3;
 	display: flex;
 	min-height: calc(100vh - 50px);
+	background-image: url(assets/bg_brickwall.png);
 }
 
 .hero-content {
@@ -228,7 +229,7 @@ ul {
 	justify-content: space-around;
 }
 
-.h1 {
+.hero-content .h1 {
 	color: #505050;
 	color: rgba(0, 0, 0, .9);
 	font: 400 2rem/1.2 Roboto;
@@ -295,7 +296,7 @@ ul {
 	}
 	/* Sets margin rigth to all columns in sub hero content except for the last one */
 	.col {
-		margin-right: 1rem;
+		margin-right: 2rem;
 	}
 	.col:last-child {
 		margin-right: 0;
@@ -434,8 +435,11 @@ ul {
 	}
 }
 
+
+/* Removes margin right in footer-content columns */
+
 .footer-content .col {
-	margin-bottom: 1rem;
+	margin: 0 0 1rem 0;
 }
 
 
