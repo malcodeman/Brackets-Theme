@@ -8,7 +8,7 @@ body {
 
 @media (min-width: 768px) {
 	.hidden {
-		overflow: visible;
+		overflow: auto;
 	}
 }
 
@@ -46,6 +46,9 @@ ul {
 	width: 100%;
 }
 
+
+/* Class header-wrapper-full is added to header-wrapper during full screen menu */
+
 .header-wrapper-full {
 	background-color: #fff;
 	height: 100vh;
@@ -80,6 +83,9 @@ ul {
 	}
 }
 
+
+/* Class nav-full is added to nav during full screen menu */
+
 .nav-full {
 	min-height: 100vh;
 }
@@ -98,6 +104,8 @@ ul {
 }
 
 .nav-min a:nth-child(1) {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
 	font: 1.2rem/1.2 Roboto;
 }
 
@@ -110,6 +118,8 @@ ul {
 }
 
 .nav-max a {
+	color: #737373;
+	color: rgba(0, 0, 0, .6);
 	font: .8rem/1.2 Roboto;
 	margin-bottom: 1rem;
 }
@@ -147,14 +157,10 @@ ul {
 }
 
 
-/* Sets margin rigth to all icons in nav social except for the last one */
+/* Class flex is added to nav-max and nav-social during full screen menu */
 
-.nav-social .icon {
-	margin-right: 1rem;
-}
-
-.nav-social .icon:last-child {
-	margin-right: 0;
+.flex {
+	display: flex;
 }
 
 .icon {
@@ -163,6 +169,17 @@ ul {
 	cursor: pointer;
 	height: 24px;
 	width: 24px;
+}
+
+
+/* Sets margin rigth to all icons in nav social except for the last one */
+
+.nav-social .icon {
+	margin-right: 1rem;
+}
+
+.nav-social .icon:last-child {
+	margin-right: 0;
 }
 
 .ic-menu {
@@ -218,11 +235,14 @@ ul {
 }
 
 .h1 {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
 	font: 400 2rem/1.2 Roboto;
 	text-align: center;
 }
 
 .btn-cta {
+	color: #fff;
 	background-color: #2098f5;
 	border: 0;
 	cursor: pointer;
@@ -236,6 +256,7 @@ ul {
 }
 
 .hero-content a {
+	color: #2098f5;
 	font: 1rem/1.2 Roboto;
 }
 
@@ -284,6 +305,8 @@ ul {
 
 .sub-hero-content .col .h2 {
 	margin-bottom: 1rem;
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
 }
 
 .col-item {
@@ -294,6 +317,15 @@ ul {
 	font: 400 1rem/1.6 Roboto;
 }
 
+.sub-hero-content .col .col-item .h3 {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
+}
+
+.sub-hero-content .col .col-item a {
+	color: #2098f5;
+}
+
 .sub-hero-content .col .col-item p {
 	font: .8rem/1.6 Roboto;
 }
@@ -301,6 +333,7 @@ ul {
 .btn {
 	background-color: transparent;
 	border: 1px solid #94d0ff;
+	color: #2098f5;
 	cursor: pointer;
 	font: .8rem/1.2 Roboto;
 	margin-bottom: 2rem;
@@ -365,10 +398,18 @@ ul {
 	margin-bottom: 0;
 }
 
+.footer-content .col .h3 {
+	color: #fff;
+}
+
 .footer-content .col .list {
 	color: #5f6569;
 	font: .8rem/1.6 Roboto;
 	list-style-position: inside;
+}
+
+.footer-content .col .list li a {
+	color: #98d2ff;
 }
 
 
@@ -389,30 +430,6 @@ ul {
 	text-align: center;
 }
 
-
-/* Framework */
-
-
-.color-dark {
-	color: rgba(0, 0, 0, .9);
-}
-
-.color-dark-6 {
-	color: rgba(0, 0, 0, .6);
-}
-
-.color-white {
-	color: #fff;
-}
-
-.color-blue {
-	color: #2098f5;
-}
-
-.color-light-blue {
+.about-content p a {
 	color: #98d2ff;
-}
-
-.flex {
-	display: flex;
 }
