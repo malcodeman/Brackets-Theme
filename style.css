@@ -376,14 +376,18 @@ ul {
 @media (min-width: 768px) {
 	.footer-content {
 		flex-direction: row;
-		justify-content: space-between;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-grp {
+		flex-grow: 1;
 	}
 }
 
 @media (min-width: 992px) {
-	.row {
+	.col-grp {
 		display: flex;
-		flex-grow: 1;
 	}
 }
 
@@ -392,10 +396,18 @@ ul {
 }
 
 
-/* Removes margin bottom from the last column in footer content */
+/* Removes margin bottom from last column */
 
-.footer-content .row:last-child .col:last-child {
-	margin-bottom: 0;
+@media (min-width: 768px) {
+	.footer-content .col:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.footer-content .col {
+		margin-bottom: 0;
+	}
 }
 
 .footer-content .col .h3 {
