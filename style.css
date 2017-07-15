@@ -32,7 +32,7 @@ p {
 	height: 50px;
 	left: 0;
 	overflow-y: auto;
-	position: fixed;
+	position: sticky;
 	right: 0;
 	top: 0;
 	width: 100%;
@@ -191,7 +191,6 @@ p {
 .hero-wrapper {
 	background-color: #f0f2f3;
 	display: flex;
-	margin-top: 50px;
 	min-height: calc(100vh - 50px);
 }
 
