@@ -24,8 +24,16 @@ p {
 	margin-bottom: 0;
 }
 
+ul {
+	padding-left: 0;
+	margin: 0 0;
+}
+
 
 /* Header */
+
+
+/* Position sticky - https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning */
 
 .header-wrapper {
 	background-color: rgba(255, 255, 255, .9);
@@ -209,6 +217,11 @@ p {
 	}
 }
 
+.h1 {
+	font: 400 2rem/1.2 Roboto;
+	text-align: center;
+}
+
 .btn-cta {
 	background-color: #2098f5;
 	border: 0;
@@ -265,12 +278,20 @@ p {
 	}
 }
 
+.h2 {
+	font: 400 1.2rem/1.4 Roboto;
+}
+
 .sub-hero-content .col .h2 {
 	margin-bottom: 1rem;
 }
 
 .col-item {
 	margin-bottom: 1rem;
+}
+
+.h3 {
+	font: 400 1rem/1.6 Roboto;
 }
 
 .sub-hero-content .col .col-item p {
@@ -285,6 +306,7 @@ p {
 	margin-bottom: 2rem;
 	padding: 1rem;
 	transition: background-color 400ms ease-out;
+	text-align: center;
 }
 
 .btn:hover {
@@ -364,31 +386,12 @@ p {
 .about-content p {
 	color: #a6aab2;
 	font: .8rem/1.2 Roboto;
+	text-align: center;
 }
 
 
 /* Framework */
 
-.h1 {
-	font: 400 2rem/1.2 Roboto;
-}
-
-.h2 {
-	font: 400 1.2rem/1.4 Roboto;
-}
-
-.h3 {
-	font: 400 1rem/1.6 Roboto;
-}
-
-.list {
-	padding-left: 0;
-	margin: 0 0;
-}
-
-.text-center {
-	text-align: center;
-}
 
 .color-dark {
 	color: rgba(0, 0, 0, .9);
