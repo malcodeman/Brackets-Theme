@@ -1,0 +1,138 @@
+/* Light Theme */
+
+
+/* Header section */
+
+.header-wrapper {
+	background-color: rgba(255, 255, 255, .9);
+}
+
+.header-wrapper-full {
+	background-color: #fff;
+}
+
+@media (min-width: 768px) {
+	.header-wrapper-full {
+		background-color: rgba(255, 255, 255, .9);
+	}
+}
+
+.nav-min a:nth-child(1) {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
+}
+
+.nav-max a {
+	color: #737373;
+	color: rgba(0, 0, 0, .6);
+}
+
+
+/* Hero section */
+
+.hero-wrapper {
+	background-color: #f0f2f3;
+	background: url(light-theme/bg_brickwall.png) fixed;
+}
+
+.hero-content .h1 {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
+}
+
+.btn-cta {
+	color: #fff;
+	background-color: #2098f5;
+}
+
+.btn-cta:hover {
+	background-color: #288EDF;
+}
+
+.hero-content a {
+	color: #2098f5;
+}
+
+.promo-wrapper {
+	background-color: #fff;
+}
+
+.col .h2,
+.col-item .h2 {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
+}
+
+.col .h3,
+.col-item .h3 {
+	color: #505050;
+	color: rgba(0, 0, 0, .9);
+}
+
+.col a,
+.col-item a {
+	color: #2098f5;
+}
+
+.col p,
+.col-item p {
+	color: #737373;
+	color: rgba(0, 0, 0, .6);
+}
+
+
+/* Features section */
+
+.features-wrapper {
+	background-color: #fff;
+}
+
+
+/* Subhero section */
+
+.sub-hero-wrapper {
+	background-color: #dee9f1;
+}
+
+.btn {
+	background-color: transparent;
+	border-color: #94d0ff;
+}
+
+.btn:hover {
+	background-color: #fff;
+}
+
+
+/* Footer section */
+
+.footer-wrapper {
+	background-color: #13181b;
+}
+
+.footer-content .col .h3 {
+	color: #fff;
+}
+
+.footer-content .col .list {
+	color: #5f6569;
+}
+
+.footer-content .col .list li a {
+	color: #98d2ff;
+}
+
+
+/* About section */
+
+.about-wrapper {
+	background-color: #13181b;
+}
+
+.about-content p {
+	color: #a6aab2;
+}
+
+.about-content p a {
+	color: #98d2ff;
+}
