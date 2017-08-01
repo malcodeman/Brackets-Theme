@@ -1,6 +1,17 @@
-body {
+a {
+	text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
 	margin: 0;
 }
+
+
+/* Class hidden is added to body during full screen menu */
 
 .hidden {
 	overflow: hidden;
@@ -10,18 +21,6 @@ body {
 	.hidden {
 		overflow: auto;
 	}
-}
-
-a {
-	text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-p {
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 ul {
@@ -183,7 +182,7 @@ ul {
 }
 
 .ic-menu {
-	background-image: url(img/icons/ic_menu_black_48px.svg);
+	background-image: url(images/icons/ic_menu_black_48px.svg);
 }
 
 @media (min-width: 768px) {
@@ -193,7 +192,7 @@ ul {
 }
 
 .ic-close {
-	background-image: url(img/icons/ic_close_black_48px.svg);
+	background-image: url(images/icons/ic_close_black_48px.svg);
 }
 
 @media (min-width: 768px) {
@@ -203,11 +202,11 @@ ul {
 }
 
 .ic-github {
-	background-image: url(img/icons/ic_github.svg);
+	background-image: url(images/icons/ic_github.svg);
 }
 
 .ic-twitter {
-	background-image: url(img/icons/ic_twitter.svg);
+	background-image: url(images/icons/ic_twitter.svg);
 }
 
 
@@ -217,7 +216,7 @@ ul {
 	background-color: #f0f2f3;
 	display: flex;
 	min-height: calc(100vh - 50px);
-	background: url(img/bg_brickwall.png) fixed;
+	background: url(images/backgrounds/bg_brickwall.png) fixed;
 }
 
 .hero-content {
