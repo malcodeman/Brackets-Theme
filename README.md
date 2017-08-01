@@ -1,6 +1,7 @@
-![Homepage image](screenshots/homepage.png)
 # Code-Editor-Theme
-Template for code editor or similar software
+Template for code editor or similar software.
+
+![Homepage image](screenshots/homepage.png)
 
 ## Assets
 
