@@ -1,4 +1,6 @@
-# Brackets-Theme
+![Homepage image](screenshots/homepage.png)
+# Code-Editor-Theme
+Template for code editor or similar software
 
 ## Assets
 
