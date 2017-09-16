@@ -1,4 +1,4 @@
-# Code-Editor-Theme
+# Code Editor Theme
 Template for code editor or similar software.
 
 ![Homepage image](screenshots/homepage.png)
@@ -18,4 +18,4 @@ Template for code editor or similar software.
 * [Twitter](https://feathericons.com/node_modules/feather-icons/dist/icons/twitter.svg)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
