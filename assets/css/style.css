@@ -1,5 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 a {
   text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
 }
 
 body,
@@ -10,52 +31,24 @@ p {
   margin: 0;
 }
 
-/* Class hidden is added to body during full screen menu */
-
-.hidden {
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .hidden {
-    overflow: auto;
-  }
-}
-
-ul {
-  padding-left: 0;
-  margin: 0;
-}
-
 /* Header section */
 
 .header-wrapper {
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
   left: 0;
-  overflow-y: auto;
   position: fixed;
   right: 0;
   top: 0;
-  width: 100%;
 }
 
-/* Class header-wrapper-full is added to header-wrapper during full screen menu */
-
 .header-wrapper-full {
-  background-color: #fff;
-  height: 100vh;
+  position: initial;
 }
 
 @media (min-width: 768px) {
   .header-wrapper-full {
-    background-color: rgba(255, 255, 255, 0.9);
-    height: inherit;
+    position: fixed;
   }
-}
-
-.header-content {
-  box-sizing: border-box;
 }
 
 .container {
@@ -68,15 +61,15 @@ ul {
 .nav {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
   .nav {
     flex-direction: row;
+    justify-content: initial;
   }
 }
-
-/* Class nav-full is added to nav during full screen menu */
 
 .nav-full {
   min-height: 100vh;
@@ -84,7 +77,7 @@ ul {
 
 @media (min-width: 768px) {
   .nav-full {
-    min-height: 0;
+    min-height: initial;
   }
 }
 
@@ -96,17 +89,20 @@ ul {
 }
 
 .nav-min a:nth-child(1) {
-  color: #505050;
-  color: rgba(0, 0, 0, 0.9);
-  font: 1.2rem/1.2 Roboto;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 .nav-max {
   display: none;
+}
+
+.nav-max-visible {
+  display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: center;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 @media (min-width: 768px) {
@@ -114,44 +110,40 @@ ul {
     align-items: center;
     display: flex;
     flex-direction: row;
-    flex-grow: 0;
     padding: 0;
   }
 }
 
 .nav-max a {
-  color: #737373;
   color: rgba(0, 0, 0, 0.6);
-  font: 0.8rem/1.2 Roboto;
+  font-size: 0.8rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   .nav-max a {
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem;
   }
 }
 
 .nav-social {
-  align-items: center;
   display: none;
-  flex-grow: 1;
-  padding: 1rem 0 1rem 0;
+}
+
+.nav-social-visible {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 @media (min-width: 768px) {
   .nav-social {
     display: flex;
-    flex-grow: 0;
+    align-items: center;
     margin-left: auto;
     padding: 0;
   }
-}
-
-/* Class flex is added to nav-max and nav-social during full screen menu */
-
-.flex {
-  display: flex;
 }
 
 .icon {
@@ -161,8 +153,6 @@ ul {
   height: 24px;
   width: 24px;
 }
-
-/* Sets margin rigth to all icons in nav social except for the last one */
 
 .nav-social .icon {
   margin-right: 1rem;
@@ -200,28 +190,38 @@ ul {
   background-image: url(images/icons/ic_twitter.svg);
 }
 
+.content-hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .content-hidden {
+    display: block;
+  }
+}
+
 /* Hero section */
 
 .hero-wrapper {
   background-color: #f0f2f3;
   display: flex;
-  min-height: calc(100vh - 50px);
-  background: url(images/backgrounds/bg_brickwall.png) fixed;
+  min-height: 100vh;
+  padding-top: 50px;
+  background-image: url(images/backgrounds/bg_brickwall.png);
+  background-attachment: fixed;
 }
 
 .hero-content {
   align-items: center;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: space-around;
 }
 
 .hero-content .h1 {
-  color: #505050;
-  color: rgba(0, 0, 0, 0.9);
-  font: 400 1.8rem/1.2 Roboto;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.8rem;
+  line-height: 1.8;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -237,7 +237,8 @@ ul {
   background-color: #2098f5;
   border: 0;
   cursor: pointer;
-  font: 1.2rem/1.4 Roboto;
+  font-size: 1.2rem;
+  line-height: 1.4;
   padding: 2rem;
   transition: background-color 400ms ease-out;
   margin-bottom: 2rem;
@@ -249,7 +250,8 @@ ul {
 
 .hero-content a {
   color: #2098f5;
-  font: 1rem/1.2 Roboto;
+  font-size: 1rem;
+  line-height: 1.2;
   margin-bottom: 2rem;
 }
 
@@ -261,57 +263,34 @@ ul {
 }
 
 .promo-content {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .promo-content {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .col {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
-
-/* Removes margin bottom from the last column of its parent */
-
-.col:last-child {
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%  */
-  /* Sets margin rigth to all columns in sub hero content and removes margin bottom */
-  .col {
-    flex: 1;
-    margin: 0 2rem 0 0;
-  }
-  /* Removes margin right from the last column */
-  .col:last-child {
-    margin-right: 0;
-  }
-}
-
-/* Styling for columns and column-items */
 
 .col .h2,
 .col-item .h2 {
-  color: #505050;
-  color: rgba(0, 0, 0, 0.9);
-  font: 400 1.2rem/1.4 Roboto;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .col .h3,
 .col-item .h3 {
-  color: #505050;
-  color: rgba(0, 0, 0, 0.9);
-  font: 400 1rem/1.6 Roboto;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .col a,
@@ -321,9 +300,9 @@ ul {
 
 .col p,
 .col-item p {
-  color: #737373;
   color: rgba(0, 0, 0, 0.6);
-  font: 0.8rem/1.6 Roboto;
+  font-size: 0.8rem;
+  line-height: 1.6;
 }
 
 /* Features section */
@@ -334,21 +313,20 @@ ul {
 }
 
 .features-content {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .features-content {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 768px) {
-  .features-content .col-item {
-    margin-bottom: 0;
+@media (min-width: 992px) {
+  .features-content {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -356,19 +334,24 @@ ul {
 
 .sub-hero-wrapper {
   background-color: #dee9f1;
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0;
 }
 
 .sub-hero-content {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .sub-hero-content {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-hero-content {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -381,7 +364,8 @@ ul {
   border: 1px solid #94d0ff;
   color: #2098f5;
   cursor: pointer;
-  font: 0.8rem/1.2 Roboto;
+  font-size: 0.8rem;
+  line-height: 1.2;
   padding: 1rem;
   transition: background-color 400ms ease-out;
   text-align: center;
@@ -399,14 +383,20 @@ ul {
 }
 
 .footer-content {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .footer-content {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -416,7 +406,8 @@ ul {
 
 .footer-content .col .list {
   color: #5f6569;
-  font: 0.8rem/1.6 Roboto;
+  font-size: 0.8rem;
+  line-height: 1.6;
   list-style-position: inside;
 }
 
@@ -431,13 +422,10 @@ ul {
   padding: 2rem 0 4rem 0;
 }
 
-.about-content {
-  box-sizing: border-box;
-}
-
 .about-content p {
   color: #a6aab2;
-  font: 0.8rem/1.2 Roboto;
+  font-size: 0.8rem;
+  line-height: 1.2;
   text-align: center;
 }
 
