@@ -147,11 +147,15 @@ p {
 }
 
 .icon {
-  background: center/24px no-repeat transparent;
+  background-position: center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-color: transparent;
   border: 0;
   cursor: pointer;
   height: 24px;
   width: 24px;
+  opacity: 0.8;
 }
 
 .nav-social .icon {
@@ -163,7 +167,7 @@ p {
 }
 
 .ic-menu {
-  background-image: url(images/icons/ic_menu_black_48px.svg);
+  background-image: url(images/icons/ic_menu.svg);
 }
 
 @media (min-width: 768px) {
@@ -173,7 +177,7 @@ p {
 }
 
 .ic-close {
-  background-image: url(images/icons/ic_close_black_48px.svg);
+  background-image: url(images/icons/ic_x.svg);
 }
 
 @media (min-width: 768px) {

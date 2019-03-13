@@ -9,12 +9,9 @@ Template for code editor or similar software.
 
 ## Assets
 
-- [Brickwall background](https://www.toptal.com/designers/subtlepatterns/brick-wall/)
+- [Brickwall background](https://www.toptal.com/designers/subtlepatterns/brick-wall)
 - [Roboto font](https://fonts.google.com/specimen/Roboto)
-- [Menu icon](https://material.io/icons/#ic_menu)
-- [Close icon](https://material.io/icons/#ic_close)
-- [Github icon](https://feathericons.com/node_modules/feather-icons/dist/icons/github.svg)
-- [Twitter icon](https://feathericons.com/node_modules/feather-icons/dist/icons/twitter.svg)
+- [Icons](https://feathericons.com)
 
 ## License
 
