@@ -5,7 +5,7 @@
 
 Template for code editor or similar software.
 
-![Homepage image](screenshots/homepage.png)
+![Screenshot](docs/images/screenshot.png)
 
 ## Assets
 
